@@ -1,0 +1,22 @@
+h1 {
+  color: red;
+}
+
+h2{background-color: green;
+color:white;}
+
+li{border: 1px solid black;}
+
+.second-h2 {display: block;
+padding:30px;}
+.head-div {
+width: 90px;
+height: 90px;
+  color: white;
+  padding: 5px;
+  margin-bottom: 100px;
+  background-color: blue;
+}
+
+.head-span{color: red;}
+.form-span{display: block; padding-left: 90px;}
