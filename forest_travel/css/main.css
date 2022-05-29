@@ -90,7 +90,7 @@ ul {
   margin-right: 50px;
 }
 
-.header-nav-list-item:last-item {
+.header-nav-list-item:last-child {
   margin-right: 0;
 }
 
