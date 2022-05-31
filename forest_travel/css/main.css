@@ -18,7 +18,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -46,6 +47,10 @@ ul {
   display: none;
 }
 
+.bgcolor {
+  background-color: #f2f8f6;
+}
+
 /* header */
 
 .header {
@@ -55,7 +60,20 @@ ul {
   height: 800px;
 
   background-color: #265847;
-  background-image: url("./../img/header-br.jpg");
+  background-image: url("./../img/header/header-br.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+
+  height: 100px;
+
+  background-color: #265847;
+  background-image: url("./../img/header/header-small-bg.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -67,6 +85,7 @@ ul {
   align-items: center;
 
   margin: 0 auto;
+
   width: 1170px;
 }
 
@@ -78,7 +97,7 @@ ul {
 }
 
 .header-nav {
-  font-style: 22px;
+  font-size: 22px;
   color: #fff;
 }
 
@@ -151,7 +170,7 @@ ul {
   transform: translateX(-50%);
 
   content: "";
-  background-image: url("../img/arrow-down.svg");
+  background-image: url("../img/header/arrow-down.svg");
 }
 
 /* main */
@@ -191,7 +210,7 @@ ul {
 .main-content-text {
   margin-bottom: 40px;
 
-  font-style: 20px;
+  font-size: 20px;
   line-height: 1.6;
   color: #314058;
 }
@@ -304,4 +323,211 @@ ul {
 
 .footer-widget-list li {
   margin-bottom: 15px;
+}
+
+/* Inner Page Tours */
+
+.inner-page-tours {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.inner-page-tours-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Cads */
+
+.card-link-wrapper {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-link-wrapper:hover {
+  opacity: 0.9;
+}
+
+.cards-first-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card-second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-second-row-column > * + * {
+  margin-top: 30px;
+}
+
+.card {
+  width: 570px;
+}
+
+.card.bigger {
+  width: 670px;
+}
+
+.card.small {
+  width: 470px;
+}
+
+.card-title-wrapper {
+  display: flex;
+  align-items: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  height: 80px;
+
+  background-color: #a6a6a6;
+  color: #fff;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card.extreme-color .card-title-wrapper {
+  background-color: #c1b19b;
+}
+
+.card.adventures-color .card-title-wrapper {
+  background-color: #66b0be;
+}
+
+.card.tracking-color .card-title-wrapper {
+  background-color: #876f56;
+}
+
+.card.jungle-color .card-title-wrapper {
+  background-color: #27695e;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 700;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Articte page */
+
+.row-article-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-page-nav {
+  width: 270px;
+
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.article-page-nav-title {
+  margin-bottom: 34px;
+
+  font-weight: 700;
+  font-size: 28px;
+  color: #314058;
+}
+
+.article-page-nav-list {
+  font-size: 20px;
+  border-top: 1px solid #d6d9d8;
+}
+
+.article-page-nav-list li {
+  border-bottom: 1px solid #d6d9d8;
+}
+
+.article-page-nav-list a {
+  display: block;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  color: #138ece;
+  text-decoration: none;
+}
+
+.article-page-nav-list a.active {
+  font-weight: 700;
+  color: #e04e4e;
+}
+
+.article-page-nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* article-page-article */
+
+.article-page-article {
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  width: 770px;
+
+  color: #31405b;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.article-page-article h1,
+.article-page-article h2,
+.article-page-article h3,
+.article-page-article h4,
+.article-page-article h5,
+.article-page-article h6 {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.article-page-article h1 {
+  margin-top: -6px;
+  margin-bottom: 40px;
+
+  font-size: 54px;
+}
+.article-page-article h2 {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 32px;
+}
+.article-page-article h3 {
+  font-size: 26px;
+}
+.article-page-article h4 {
+  font-size: 22px;
+}
+.article-page-article h5 {
+  font-size: 20px;
+}
+.article-page-article h6 {
+  font-size: 18px;
+}
+
+.article-page-article p {
+  margin-bottom: 15px;
+}
+.article-page-article img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article-page-article a {
+  color: #138ece;
+}
+
+.article-page-article > *:last-child {
+  margin-bottom: 0;
 }
