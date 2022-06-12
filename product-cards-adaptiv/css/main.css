@@ -1,0 +1,119 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap');
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+body {
+	font-family: sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	color: #000000;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* Секция */
+
+.section {
+	padding: 90px 0;
+}
+
+.section-header {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.section-products {
+	margin-bottom: 40px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	row-gap: 40px;
+}
+
+.section-button-wrapper {
+	text-align: center;
+}
+
+/* Заголовки */
+
+.title {
+	margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+	font-size: 42px;
+}
+
+.subtitle {
+	font-size: 14px;
+	color: #999999;
+	text-transform: uppercase;
+}
+
+/* Карточка */
+
+.card {
+	width: 270px;
+	text-align: center;
+}
+
+.card-img {
+	margin-bottom: 12px;
+}
+
+.card-title {
+	margin-bottom: 12px;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+
+.card-old-price {
+	margin-right: 10px;
+	font-size: 14px;
+	text-decoration: line-through;
+	color: #999999;
+}
+
+.card-price {
+	font-size: 14px;
+	font-weight: 700;
+	color: #f72464;
+}
+
+/* Кнопка */
+
+.button {
+	display: inline-block;
+
+	padding: 9px 40px 12px;
+	background: #ffffff;
+	border: 1px solid #f72464;
+	border-radius: 4px;
+
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+
+    transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
+}
+
+.button:hover,
+.button:focus {
+	background: #f72464;
+	color: #fff;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+	background: #ba1044;
+	border: 1px solid #ba1044;
+}
