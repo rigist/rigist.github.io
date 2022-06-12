@@ -1,160 +1,101 @@
-@import "./reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
-
-/*
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Playfair Display', serif;
-*/
-
 body {
-  font-family: "Playfair Display", serif;
-  color: #000000;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-
-  width: 1170px;
-}
-
-/* Секция */
-
-.section {
-  padding: 90px 115px;
-}
-
-.section-header {
-  margin-bottom: 60px;
-
-  text-align: center;
-}
-
-.section-posts {
-  margin-bottom: 50px;
-  justify-content: center;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 60px;
-}
-
-.section-button-wrapper {
-  text-align: center;
-}
-
-/* Заголовки */
-
-.title {
-  margin-bottom: 10px;
-
-  font-family: "Playfair Display";
-  font-size: 42px;
-  line-height: 56px;
-}
-
-.subtitle {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #000000;
-}
-
-/* Карточка */
-
-.card {
-  padding-bottom: 20px;
-  border: 1px solid #c1d1d4;
-
-  width: 270px;
-  text-align: center;
-}
-
-.card-img {
-  margin-bottom: 20px;
-}
-
-.card-title {
-  margin-bottom: 15px;
-
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 29px;
-  text-align: center;
-
-  color: #000000;
-}
-
-.card-subtitle {
-  margin-bottom: 20px;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-family: Arial, sans-serif;
   line-height: 1.5;
-  text-align: center;
-
-  color: #000000;
 }
 
-/* Кнопка */
+h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
 
-.card-wrapper a {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-
-  text-align: center;
-  text-decoration-line: underline;
-
-  color: #0277b9;
+  line-height: 1;
+  font-size: 42px;
 }
 
-.button {
-  display: inline-block;
-
-  padding: 12px 40px 16px;
-
-  border: 1px solid #000;
-  border-radius: 4px;
-
-  background: #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 29px;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #000000;
-
-  transition: background-color 0.2s ease-in, color 0.2s ease-in,
-    border 0.2s ease-in;
+h2 {
+  margin-bottom: 24px;
+  font-size: 32px;
 }
 
-.button:hover,
-.button:focus {
-  background: #000;
-  color: #fff;
+h3 {
+  margin-bottom: 24px;
+  font-size: 26px;
 }
 
-.button:active {
-  position: relative;
-  top: 1px;
-  background: #444444;
+.header {
+  padding-top: 40px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+  /* padding-left: 40px; */
+
+  width: 900px;
+  background-color: #f0f8ff;
+  color: black;
+}
+
+.header h1,
+.header p {
+  margin-left: 40px;
+}
+
+.main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding: 40px;
+  width: 900px;
+
+  background-color: #dcebf0;
+}
+
+.navigation {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  width: 900px;
+
+  background-color: #496883;
+  color: white;
+}
+
+.navigation a {
+  margin-right: 30px;
+  color: white;
+}
+
+.navigation a:last-child {
+  margin-right: 0;
+}
+
+.main section p {
+  font-size: 16px;
+}
+
+blockquote {
+  margin: 40px 0px;
+
+  padding: 15px 40px;
+
+  border-left: 3px solid #f24137;
+
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding: 20px 40px;
+
+  width: 900px;
+  background-color: #1d3f5e;
+  color: white;
+}
+
+article {
+  margin: 10px;
 }
