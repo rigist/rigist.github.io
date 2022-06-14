@@ -3,9 +3,9 @@
 /* font-family: 'Noto Sans', sans-serif; */
 
 /* Tablet */
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   .container {
-    width: 870px;
+    width: 900px;
   }
 
   .subtitle {
@@ -17,7 +17,7 @@
   }
 
   .section-posts {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .section-posts:nth-last-child(n + 2) {
@@ -28,7 +28,7 @@
 /* Mobile */
 @media (max-width: 899px) {
   .container {
-    width: 570px;
+    width: 600px;
   }
 
   .title {
@@ -62,7 +62,7 @@
 /* Mobile XS */
 @media (max-width: 599px) {
   .container {
-    width: 290px;
+    width: 320px;
   }
 
   .card-title {
@@ -76,6 +76,7 @@
   }
 
   .section-posts {
+    justify-content: center;
     row-gap: 20px;
   }
 
