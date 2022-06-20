@@ -1,0 +1,26 @@
+
+.card {
+    width: 270px;
+    text-align: center;
+}
+
+.card__img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.card__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+    color: $paragraphColor;
+}
