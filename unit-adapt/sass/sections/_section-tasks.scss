@@ -38,11 +38,13 @@
   @media (max-width: 899px) {
     flex-direction: row-reverse;
     padding-left: 0;
+    align-items: normal;
   }
 
   /*Mobile XS media */
   @media (max-width: 599px) {
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 

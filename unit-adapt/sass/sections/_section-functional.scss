@@ -56,11 +56,13 @@
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  row-gap: 30px;
 
   /*Mobile XS media */
   @media (max-width: 599px) {
     margin-left: -20px;
     margin-right: -20px;
+    row-gap: 40px;
   }
 }
 
