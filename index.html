@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+	        $("#date").datepicker();
+        });
+    </script>
+
+    <title>WORD BANK Publications</title>
+  </head>
+  <body class="content">
+    <div class="flex-container space-between">
+    <div class="flex-container space-between">
+        <div><img src="./logo.jpg" alt="logo" /></div>
+        <div>WORD BANK Publications</div>
+      </div>
+      <div class = "orange">
+        <div>8-800-100-5005</div>
+        <div>+7(3452)522-000</div>
+     </div>
+    </div>  
+      <nav>
+        <menu class="flex-container row main-menu">
+          <li>Кредитные карты</li>
+          <li class = "active">Вклады</li>
+          <li>Дебетовая карта</li>
+          <li>Страхование</li>
+          <li>Друзья</li>
+          <li>Интернет-банк</li>
+        </menu>
+      </nav>
+      <div class="breadcrumbs"><span>Главная</span><span>Вклады</span><span>Калькулятор</span></div>
+    </header>
+    <main >
+        <h1>Калькулятор</h1> 
+        <form method="post" action="calc.php">
+           <div><label>Дата оформления вклада <input type="date" id="date" name="date"/></label></div>
+            <div><label>Сумма вклада <input type="number" min="1000" max="3000000"   id="summa" name="summa"/></label>  
+                <input type="range" min="1000" max="3000000" /></div>
+            <div><label>Срок вклада  <select id="term" name="term">
+                <option value="1">1 год</option>
+                <option value="2">2 года</option>
+                <option value="3">3 года</option>
+                <option value="4">4 года</option>
+                <option value="5">5 лет</option>
+            </select></label></div>
+            <div><label>Пополнение вклада  
+                <input type="radio" value="no" checked name="adding"/>Нет
+                <input type="radio" value="yes" name="adding"/>Да
+            </label></div>
+            <div><label>Сумма пополнения вклада<input type="number" min="1000" max="3000000"   id="summa_adding" name="summa_adding"/></label>
+                <input type="range" min="1000" max="3000000" /></div>
+            <div><button type="submit">Расчитать</button> 
+             <label>Результат: руб</label></div>
+
+        </form>
+
+    </main>
+    <footer class="footer">
+      <menu class= "flex-container row  footer-menu" >
+        <li>Кредитные карты</li>
+        <li>Вклады</li>
+        <li>Дебетовая карта</li>
+        <li>Страхование</li>
+        <li>Друзья</li>
+        <li>Интернет-банк</li>
+      </menu>
+    </footer>
+  </body>
+</html>
